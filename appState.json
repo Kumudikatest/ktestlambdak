@@ -32,7 +32,7 @@
       }
     },
     "deletedFiles": [
-      "ktestlambdak/lambda.js"
+      "ktestlambdak/                 .js"
     ],
     "rootNode": "87f0ce16-ec8b-4152-9963-55094f1778ee",
     "openFiles": [
@@ -61,7 +61,7 @@
     "projectVersion": "1.0.0",
     "projectRegion": "us-east-1",
     "platform": "AWS",
-    "lastSave": 1542085710902
+    "lastSave": 1542086003840
   },
   "VCS_STATE": {
     "provider": "GitHub",
