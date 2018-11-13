@@ -8,7 +8,8 @@
         "type": "DIRECTORY",
         "isDirectory": true,
         "children": [
-          "0579151a-f728-4afd-b7b7-5ebef0a708d0"
+          "0579151a-f728-4afd-b7b7-5ebef0a708d0",
+          "8a4acad2-4a97-4e6a-b709-376ebecdbb6a"
         ],
         "isRemovable": false,
         "filePath": "ktestlambdak"
@@ -16,14 +17,36 @@
       "0579151a-f728-4afd-b7b7-5ebef0a708d0": {
         "id": "0579151a-f728-4afd-b7b7-5ebef0a708d0",
         "parent": "87f0ce16-ec8b-4152-9963-55094f1778ee",
-        "name": "lambdaupdate.js",
+        "name": "lambda.js",
         "type": "LAMBDA_FILE",
         "isDirectory": false,
         "children": [],
         "isRemovable": true,
-        "filePath": "ktestlambdak/lambdaupdate.js",
+        "filePath": "ktestlambdak/lambda.js",
         "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
         "triggers": [],
+        "config": {
+          "runtime": "nodejs8.10",
+          "timeout": 60,
+          "memory": 128
+        }
+      },
+      "8a4acad2-4a97-4e6a-b709-376ebecdbb6a": {
+        "id": "8a4acad2-4a97-4e6a-b709-376ebecdbb6a",
+        "parent": "87f0ce16-ec8b-4152-9963-55094f1778ee",
+        "name": "@#$%%rdsg.js",
+        "type": "LAMBDA_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "ktestlambdak/@#$%%rdsg.js",
+        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "triggers": [
+          {
+            "resourceName": "apigusEast1TestAPIput",
+            "config": {}
+          }
+        ],
         "config": {
           "runtime": "nodejs8.10",
           "timeout": 60,
@@ -32,14 +55,43 @@
       }
     },
     "deletedFiles": [
-      "ktestlambdak/                 .js"
+      "ktestlambdak/lambdaupdate.js"
     ],
     "rootNode": "87f0ce16-ec8b-4152-9963-55094f1778ee",
     "openFiles": [
-      "0579151a-f728-4afd-b7b7-5ebef0a708d0"
+      "0579151a-f728-4afd-b7b7-5ebef0a708d0",
+      "8a4acad2-4a97-4e6a-b709-376ebecdbb6a"
     ],
-    "currentFileId": "0579151a-f728-4afd-b7b7-5ebef0a708d0",
-    "resources": {},
+    "currentFileId": "8a4acad2-4a97-4e6a-b709-376ebecdbb6a",
+    "resources": {
+      "apigusEast1TestAPIput": {
+        "name": "apigusEast1TestAPIput",
+        "type": "API_GATEWAY",
+        "config": {
+          "selectedRegion": "us-east-1",
+          "apiMode": 1,
+          "apiName": "TestAPI",
+          "apiId": "0itznun7w3",
+          "endpointType": "EDGE",
+          "rootResourceId": "h2lelj6j7k",
+          "existingResources": {
+            "/MyLambda": "98nqbj",
+            "/": "h2lelj6j7k"
+          },
+          "resourceMode": 1,
+          "resourcePath": "/",
+          "resourceName": "",
+          "resourceId": "h2lelj6j7k",
+          "restMethod": "PUT",
+          "proxyIntegration": false,
+          "enableCORS": false,
+          "stageMode": 1,
+          "stageName": "Test",
+          "stageDeploymentId": "bcp5fs"
+        },
+        "globallyEditable": false
+      }
+    },
     "envVariables": [
       {
         "lambdaId": "all",
@@ -61,7 +113,7 @@
     "projectVersion": "1.0.0",
     "projectRegion": "us-east-1",
     "platform": "AWS",
-    "lastSave": 1542086003840
+    "lastSave": 1542086885597
   },
   "VCS_STATE": {
     "provider": "GitHub",
