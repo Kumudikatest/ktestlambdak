@@ -1,0 +1,73 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "87f0ce16-ec8b-4152-9963-55094f1778ee": {
+        "id": "87f0ce16-ec8b-4152-9963-55094f1778ee",
+        "parent": null,
+        "name": "ktestlambdak",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "0579151a-f728-4afd-b7b7-5ebef0a708d0"
+        ],
+        "isRemovable": false,
+        "filePath": "ktestlambdak"
+      },
+      "0579151a-f728-4afd-b7b7-5ebef0a708d0": {
+        "id": "0579151a-f728-4afd-b7b7-5ebef0a708d0",
+        "parent": "87f0ce16-ec8b-4152-9963-55094f1778ee",
+        "name": "lambdaupdate.js",
+        "type": "LAMBDA_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "ktestlambdak/lambdaupdate.js",
+        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "triggers": [],
+        "config": {
+          "runtime": "nodejs8.10",
+          "timeout": 60,
+          "memory": 128
+        }
+      }
+    },
+    "deletedFiles": [
+      "ktestlambdak/lambda.js"
+    ],
+    "rootNode": "87f0ce16-ec8b-4152-9963-55094f1778ee",
+    "openFiles": [
+      "0579151a-f728-4afd-b7b7-5ebef0a708d0"
+    ],
+    "currentFileId": "0579151a-f728-4afd-b7b7-5ebef0a708d0",
+    "resources": {},
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {}
+    },
+    "lambdaId": "0579151a-f728-4afd-b7b7-5ebef0a708d0"
+  },
+  "PROJECT_META": {
+    "projectName": "ktestlambdak",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "lastSave": 1542085710902
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "ktestlambdak",
+      "url": "https://github.com/Kumudikatest/ktestlambdak"
+    }
+  }
+}
